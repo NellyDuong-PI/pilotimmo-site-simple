@@ -902,6 +902,48 @@ p {
     .grid-2 {
         grid-template-columns: 1fr;
     }
+    
+    /* Who We Are Responsive */
+    .who-grid {
+        gap: var(--spacing-md);
+    }
+    
+    .who-card {
+        padding: var(--spacing-md);
+    }
+    
+    .who-icon {
+        width: 60px;
+        height: 60px;
+        font-size: 2rem;
+    }
+    
+    .who-card-title {
+        font-size: 1.5rem;
+    }
+    
+    .who-card-subtitle {
+        font-size: 0.95rem;
+    }
+    
+    .who-feature {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    
+    .success-indicators {
+        grid-template-columns: 1fr;
+        gap: var(--spacing-sm);
+    }
+    
+    .indicator {
+        padding: 1rem;
+    }
+    
+    .indicator-number {
+        font-size: 1.5rem;
+    }
 }
 
 /* ==========================================================================
