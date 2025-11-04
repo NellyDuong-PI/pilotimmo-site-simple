@@ -255,3 +255,9 @@
         font-size: 1.8em;
     }
 }
+
+.gradient-text {
+    background: linear-gradient(90deg, #ff6600, #ffcc00);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
