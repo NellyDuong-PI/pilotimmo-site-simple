@@ -106,3 +106,18 @@
     max-width: 800px;
     margin: 0 auto var(--spacing-xl);
 }
+
+/* ==========================================================================
+   CTA SECTION - Spécifique Services
+   ========================================================================== */
+.cta-section {
+    background: var(--white);   /* Fond blanc */
+    color: var(--text);          /* Texte gris foncé */
+    text-align: center;
+    padding: 80px var(--spacing-lg);
+}
+
+.cta-section .btn-primary {
+    background: linear-gradient(135deg, var(--secondary), #2563eb);
+    color: var(--white);
+}
