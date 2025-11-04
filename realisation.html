@@ -3,135 +3,257 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nos Réalisations - Piloti Immo</title>
-    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
-    <style>
-        /* Styles rapides pour la mise en page */
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
-        header { 
-            background: url('header-background.jpg') no-repeat center center/cover; 
-            color: white; text-align: center; padding: 120px 20px;
-        }
-        header h1 { font-size: 3em; margin: 0; }
-        section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
-        .success-item, .solution-item { margin-bottom: 40px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
-        h2, h3 { color: #333; }
-        .checklist { list-style: none; padding-left: 0; }
-        .checklist li::before { content: "✓ "; color: green; font-weight: bold; }
-        .solutions { display: flex; flex-wrap: wrap; gap: 20px; }
-        .solution-item { flex: 1 1 250px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; text-align: center; }
-        .solution-item span { font-size: 2em; display: block; margin-bottom: 10px; }
-        form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; }
-        input, textarea, button { padding: 10px; border-radius: 5px; border: 1px solid #ccc; width: 100%; }
-        button { background: #007BFF; color: white; border: none; cursor: pointer; }
-        button:hover { background: #0056b3; }
-    </style>
+    <title>Nos Réalisations - Pilotimmo</title>
+     <!-- Lien vers le CSS global -->
+    <link rel="stylesheet" href="assets/css/styles.css">
 </head>
+
+<!-- Bandeau cookies global -->
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-banner-inner">
+    <span>Ce site utilise des cookies pour améliorer votre expérience.</span>
+    <button id="accept-cookies">Accepter</button>
+    <button id="decline-cookies">Refuser</button>
+  </div>
+</div>
+
+<!-- Script cookies -->
+<script src="assets/js/cookies.js"></script>
+
+    
 <body>
 
-    <!-- Header -->
-    <header>
-        <h1>Nos Réalisations</h1>
-        <p>Découvrez nos projets sur-mesure pour valoriser votre patrimoine immobilier</p>
+     <!-- Header Navigation -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <a href="index.html" class="logo-link">
+                    <img src="assets/images/logo.png" alt="Logo Pilotimmo" class="logo-img">
+                    <div class="logo">PILOTIMMO</div>
+                </a>
+            </div>
+            <ul class="nav-links">
+                <li><a href="services.html">Services</a></li>
+                <li><a href="realisation.html">Realisations</a></li>
+                <li><a href="contact.html" class="cta-nav">Diagnostic Offert</a></li>
+            </ul>
+            <button class="mobile-menu-btn" aria-label="Menu mobile">☰</button>
+        </nav>
     </header>
-
-    <!-- Section Découvrez nos succès -->
-    <section>
-        <h2>Découvrez nos succès</h2>
-        <p>Chaque projet est unique. Nous apportons des solutions sur-mesure pour valoriser votre patrimoine immobilier.</p>
-
-        <!-- Projet 1 -->
-        <div class="success-item">
-            <h3>Passoire énergétique : de G à D</h3>
-            <p>Transformation complète d'un bien immobilier classé G en classe D, avec amélioration significative de la performance énergétique et valorisation locative.</p>
-            <h4>Notre accompagnement</h4>
-            <ul class="checklist">
-                <li>Audit énergétique complet</li>
-                <li>Établissement du budget des travaux</li>
-                <li>Coordination et mise en œuvre</li>
-                <li>Valorisation et mise en location optimisée</li>
-            </ul>
-        </div>
-
-        <!-- Projet 2 -->
-        <div class="success-item">
-            <h3>Studio sinistré : renaissance complète</h3>
-            <p>Suite à des dégâts des eaux importants, accompagnement complet de la rénovation jusqu'à la valorisation du bien en location puis en vente.</p>
-            <h4>Notre accompagnement</h4>
-            <ul class="checklist">
-                <li>Audit des dommages et solutions</li>
-                <li>Gestion du conflit avec les assurances</li>
-                <li>Mise en œuvre de la rénovation complète</li>
-                <li>Valorisation de sortie : location puis vente</li>
-            </ul>
-        </div>
-
-        <!-- Projet 3 -->
-        <div class="success-item">
-            <h3>Succession : valorisation d'une résidence secondaire</h3>
-            <p>Transformation d'une résidence secondaire vide et non louée en bien locatif rentable, avec financement et suivi complet des travaux.</p>
-            <h4>Notre accompagnement</h4>
-            <ul class="checklist">
-                <li>Audit du bien et opportunités</li>
-                <li>Budget détaillé des travaux nécessaires</li>
-                <li>Recherche et montage du financement</li>
-                <li>Suivi des travaux et mise en location</li>
-            </ul>
-        </div>
-
-        <!-- Projet 4 -->
-        <div class="success-item">
-            <h3>Logement occupé : résolution juridique</h3>
-            <p>Prise en charge complète d'une situation complexe de logement occupé, en collaboration avec avocats et huissiers jusqu'à résolution satisfaisante.</p>
-            <h4>Notre accompagnement</h4>
-            <ul class="checklist">
-                <li>Analyse de la situation juridique</li>
-                <li>Coordination avec avocats et huissiers</li>
-                <li>Suivi des démarches légales</li>
-                <li>Résolution négociée et satisfaisante</li>
-            </ul>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Nos Réalisations</h1>
+            <p>Des projets immobiliers complexes transformés en succès</p>
         </div>
     </section>
 
-    <!-- Section Vos problèmes, nos solutions -->
-    <section>
-        <h2>Vos problèmes, nos solutions</h2>
-        <p>Ne laissez pas votre patrimoine se détériorer. Nous transformons les défis immobiliers en opportunités de valorisation.</p>
-        <div class="solutions">
-            <div class="solution-item">
-                <span>🏗️</span>
-                <h3>Rénovation</h3>
-                <p>De l'audit à la livraison, nous gérons vos projets de A à Z</p>
+    <section class="section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Découvrez nos succès</h2>
             </div>
-            <div class="solution-item">
-                <span>⚡</span>
-                <h3>Performance énergétique</h3>
-                <p>Valorisez votre bien en améliorant son classement énergétique</p>
-            </div>
-            <div class="solution-item">
-                <span>⚖️</span>
-                <h3>Gestion juridique</h3>
-                <p>Résolvez les situations complexes avec notre réseau d'experts</p>
-            </div>
-        </div>
-    </section>
+            <p class="section-subtitle">
+                Chaque projet est unique. Nous apportons des solutions sur-mesure pour valoriser votre patrimoine immobilier.
+            </p>
 
-    <!-- Section Formulaire -->
-    <section>
-        <h2>Parlons de votre projet</h2>
-        <p>Remplissez ce formulaire et nous vous recontacterons rapidement pour discuter de vos besoins.</p>
-          <!-- Right side - HubSpot Form -->
-                <div class="hubspot-form-white-box">
-                    <script src="https://js-eu1.hsforms.net/forms/embed/v2.js" charset="utf-8"></script>
-                    <script>
-                        hbspt.forms.create({
-                            region: "eu1",
-                            portalId: "147166352",
-                            formId: "1badffb2-5eb3-407c-8c89-79bb020e1f89"
-                        });
-                    </script>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop" alt="Rénovation appartement">
+                        <span class="project-badge">Rénovation Complète</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Passoire énergétique : de G à D</h3>
+                        <p class="project-description">
+                            Transformation complète d'un bien immobilier classé G en classe D, avec amélioration significative de la performance énergétique et valorisation locative.
+                        </p>
+                        <div class="project-details">
+                            <h4>Notre accompagnement</h4>
+                            <ul>
+                                <li>Audit énergétique complet</li>
+                                <li>Établissement du budget des travaux</li>
+                                <li>Coordination et mise en œuvre</li>
+                                <li>Valorisation et mise en location optimisée</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=500&fit=crop" alt="Studio rénové">
+                        <span class="project-badge">Rénovation Complète</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Studio sinistré : renaissance complète</h3>
+                        <p class="project-description">
+                            Suite à des dégâts des eaux importants, accompagnement complet de la rénovation jusqu'à la valorisation du bien en location puis en vente.
+                        </p>
+                        <div class="project-details">
+                            <h4>Notre accompagnement</h4>
+                            <ul>
+                                <li>Audit des dommages et solutions</li>
+                                <li>Gestion du conflit avec les assurances</li>
+                                <li>Mise en œuvre de la rénovation complète</li>
+                                <li>Valorisation du sortie - location puis vente</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop" alt="Maison succession">
+                        <span class="project-badge">Succession</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Succession : valorisation d'une résidence secondaire</h3>
+                        <p class="project-description">
+                            Transformation d'une résidence secondaire vide et non louée en bien locatif rentable, avec financement et suivi complet des travaux.
+                        </p>
+                        <div class="project-details">
+                            <h4>Notre accompagnement</h4>
+                            <ul>
+                                <li>Audit du bien et opportunités</li>
+                                <li>Budget détaillé des travaux nécessaires</li>
+                                <li>Recherche et montage du financement</li>
+                                <li>Suivi des travaux et mise en location</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop" alt="Logement occupé">
+                        <span class="project-badge">Gestion juridique</span>
+                    </div>
+                    <div class="project-content">
+                        <h3>Logement occupé : résolution juridique</h3>
+                        <p class="project-description">
+                            Prise en charge complète d'une situation complexe de logement occupé, en collaboration avec avocats et huissiers jusqu'à résolution satisfaisante.
+                        </p>
+                        <div class="project-details">
+                            <h4>Notre accompagnement</h4>
+                            <ul>
+                                <li>Analyse de la situation juridique</li>
+                                <li>Coordination avec avocats et huissiers</li>
+                                <li>Suivi des démarches légales</li>
+                                <li>Résolution négociée et satisfaisante</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
     </section>
 
+    <section class="section solutions-section">
+        <div class="container">
+            <div class="section-title">
+                <h2>Vos problèmes, nos solutions</h2>
+            </div>
+            <p class="section-subtitle">
+                Ne laissez pas votre patrimoine se détériorer. Nous transformons les défis immobiliers en opportunités de valorisation.
+            </p>
+
+            <div class="solutions-grid">
+                <div class="solution-card">
+                    <div class="solution-icon">🏗️</div>
+                    <h3>Rénovation</h3>
+                    <p>De l'audit à la livraison, nous gérons vos projets de A à Z</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">⚡</div>
+                    <h3>Performance énergétique</h3>
+                    <p>Valorisez votre bien en améliorant son classement énergétique</p>
+                </div>
+
+                <div class="solution-card">
+                    <div class="solution-icon">⚖️</div>
+                    <h3>Gestion juridique</h3>
+                    <p>Résolvez les situations complexes avec notre réseau d'experts</p>
+                </div>
+            </div>
+
+            <div class="section-title">
+                <h2>Parlons de votre projet</h2>
+            </div>
+            <p class="section-subtitle">
+                Remplissez ce formulaire et nous vous recontacterons rapidement pour discuter de vos besoins.
+            </p>
+
+           <!-- Right side - HubSpot Form -->
+            <div class="hubspot-form-white-box">
+                <script src="https://js-eu1.hsforms.net/forms/embed/v2.js" charset="utf-8"></script>
+                <script>
+                    hbspt.forms.create({
+                        region: "eu1",
+                        portalId: "147166352",
+                        formId: "1badffb2-5eb3-407c-8c89-79bb020e1f89"
+                    });
+                </script>
+            </div>
+            
+        </div>
+    </section>
+
+      <!-- Footer -->
+    <footer class="footer">
+
+         <!-- Colonne 1 -->
+        <div class="footer-content">
+            <div class="footer-section">
+                <img src="assets/images/logo.png" alt="Pilotimmo" class="footer-logo" />
+                <h4 class="footer-title">PILOTIMMO</h4>
+                <p class="footer-text">Expert en valorisation et gestion de patrimoine locatif</p>
+                <p class="footer-text">Spécialistes des biens complexes : vacance, succession, passoires énergétiques</p>
+            </div>
+
+             <!-- Colonne 2 -->
+            <div class="footer-section">
+                <h4 class="footer-title">Navigation</h4>
+                <ul class="footer-links">
+                    <li><a href="index.html">Accueil</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="partenaires.html">Partenaires</a></li>
+                    <li><a href="recrutement.html">Nous rejoindre</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 3 -->
+            <div class="footer-section">
+                <h4 class="footer-title">Informations</h4>
+                <ul class="footer-links">
+                    <li><a href="a-propos.html">À propos</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="cgu.html">CGU</a></li>
+                    <li><a href="mentions-légales.html">Mentions légales</a></li>
+                </ul>
+            </div>
+
+            <!-- Colonne 4 -->
+            <div class="footer-section">
+                <h4 class="footer-title">Contactez nous </h4>
+                <p class="footer-text">Email : hello@pilotimmo.fr</p>
+                <p class="footer-text">Tél : 07.67.38.23.68 </p>
+                <p class="footer-text">  </p>
+                <p class="footer-text"><a href="contact.html" class="cta-nav">Diagnostic Offert</a></p>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pilotimmo - Tous droits réservés.</p>
+        </div>
+    </footer>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 Pilotimmo - Tous droits réservés.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
 </body>
 </html>
