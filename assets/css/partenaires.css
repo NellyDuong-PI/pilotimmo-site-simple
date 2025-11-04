@@ -1,94 +1,116 @@
-/* Partenaires - Styles */
-.partners-hero {
-    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
-    color: var(--white);
-    padding: 180px var(--spacing-lg) 120px;
-    position: relative;
-    text-align: center;
+/* ==============================
+   PARTENAIRES.CSS
+   ============================== */
+
+/* Général */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
-.partners-hero .hero-badge {
+/* ==============================
+   HERO
+   ============================== */
+.partners-hero {
+    position: relative;
+    background: url('../images/hero-partners.jpg') center/cover no-repeat;
+    color: #fff;
+    text-align: center;
+    padding: 120px 20px;
+}
+
+.partners-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.partners-hero-content {
+    position: relative;
+    z-index: 2;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.hero-badge {
     display: inline-block;
-    background: var(--accent);
-    padding: 0.3rem 1rem;
+    background-color: #ff6600;
+    color: #fff;
+    padding: 5px 15px;
     border-radius: 20px;
-    font-size: 0.8rem;
-    margin-bottom: 1rem;
-    text-transform: uppercase;
-    letter-spacing: 0.5px;
+    font-weight: bold;
+    margin-bottom: 20px;
 }
 
 .partners-hero h1 {
-    font-size: var(--font-size-3xl);
-    margin-bottom: 1rem;
+    font-size: 2.5em;
+    margin-bottom: 20px;
 }
 
 .partners-hero p {
-    font-size: var(--font-size-lg);
-    max-width: 700px;
-    margin: 0 auto 2rem auto;
-    opacity: 0.9;
+    font-size: 1.2em;
+    margin-bottom: 30px;
 }
 
-.partners-hero .hero-buttons .btn {
-    margin: 0 0.5rem;
+.hero-buttons .btn {
+    margin: 0 10px;
 }
 
-/* Benefits Cards */
-.partner-benefits .benefit-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-sm);
+/* ==============================
+   SECTIONS
+   ============================== */
+.section {
+    padding: 80px 20px;
+}
+
+.section-light {
+    background-color: #f7f7f7;
+}
+
+.text-center {
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
 }
 
-.partner-benefits .benefit-card:hover {
-    transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
+/* ==============================
+   BENEFITS & PROFESSIONAL TYPES
+   ============================== */
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
 }
 
-.partner-benefits .benefit-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    padding: 0.5rem;
-    background: var(--accent);
-    color: var(--white);
-    border-radius: 50%;
-}
-
-/* Professional Types */
-.professional-types .pro-card {
-    background: var(--white);
-    border-radius: var(--radius-lg);
-    padding: 2rem;
-    box-shadow: var(--shadow-sm);
+.grid-4 > div {
+    flex: 1 1 250px;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     text-align: center;
-    transition: transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s ease;
 }
 
-.professional-types .pro-card:hover {
+.grid-4 > div:hover {
     transform: translateY(-5px);
-    box-shadow: var(--shadow-md);
 }
 
-.professional-types .pro-icon {
-    font-size: 2rem;
-    margin-bottom: 1rem;
-    display: inline-block;
-    padding: 0.5rem;
-    background: var(--primary);
-    color: var(--white);
-    border-radius: 50%;
+.benefit-icon, .pro-icon {
+    font-size: 2.5em;
+    margin-bottom: 15px;
 }
 
-/* KPI section */
+/* ==============================
+   KPI SECTION
+   ============================== */
 .kpi-section {
-    background-color: #111; /* fond noir */
+    background-color: #111;
     color: #fff;
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -102,17 +124,19 @@
 .kpi-card h2 {
     font-size: 3em;
     margin-bottom: 10px;
+    color: #ff6600;
 }
 
 .kpi-card p {
     font-size: 1.2em;
 }
 
-/* Process section */
+/* ==============================
+   PROCESS SECTION
+   ============================== */
 .process-section {
-    padding: 60px 20px;
     background-color: #f7f7f7;
-    text-align: center;
+    padding: 80px 20px;
 }
 
 .process-section h2 {
@@ -121,8 +145,9 @@
 }
 
 .process-section p {
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-size: 1.1em;
+    color: #555;
 }
 
 .process-steps {
@@ -135,7 +160,7 @@
 .step {
     background: #fff;
     border-radius: 10px;
-    padding: 30px;
+    padding: 30px 20px;
     max-width: 300px;
     text-align: center;
     box-shadow: 0 4px 8px rgba(0,0,0,0.1);
@@ -145,13 +170,15 @@
     display: block;
     font-size: 2em;
     font-weight: bold;
-    color: #ff6600; /* couleur principale du site */
+    color: #ff6600;
     margin-bottom: 15px;
 }
 
-/* Contact / Rejoignez-nous section */
+/* ==============================
+   CONTACT SECTION / HUBSPOT
+   ============================== */
 .contact-section {
-    padding: 60px 20px;
+    padding: 80px 20px;
     text-align: center;
 }
 
@@ -163,13 +190,68 @@
 .contact-section p {
     margin-bottom: 30px;
     font-size: 1.1em;
+    color: #555;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-    .kpi-container, .process-steps {
+.hubspot-form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ==============================
+   BUTTONS
+   ============================== */
+.btn {
+    display: inline-block;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #ff6600;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #e65500;
+}
+
+.btn-secondary {
+    background-color: #555;
+    color: #fff;
+}
+
+.btn-secondary:hover {
+    background-color: #333;
+}
+
+/* ==============================
+   RESPONSIVE
+   ============================== */
+@media (max-width: 992px) {
+    .grid-4, .process-steps, .kpi-container {
         flex-direction: column;
         align-items: center;
     }
+    .grid-4 > div, .step, .kpi-card {
+        max-width: 80%;
+    }
 }
 
+@media (max-width: 576px) {
+    .partners-hero h1 {
+        font-size: 2em;
+    }
+    .benefit-icon, .pro-icon {
+        font-size: 2em;
+    }
+    .kpi-card h2 {
+        font-size: 2.2em;
+    }
+    .step-number {
+        font-size: 1.8em;
+    }
+}
