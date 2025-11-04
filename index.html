@@ -140,6 +140,12 @@
             background-clip: text;
         }
 
+        .logo img {
+            width: 140px;   /* taille par défaut sur desktop */
+            height: auto;
+            display: block;
+        }
+
         .nav-links {
             display: flex;
             gap: 2.5rem;
@@ -201,6 +207,27 @@
             color: var(--white);
             font-size: 1.8rem;
             cursor: pointer;
+        }
+
+        /* ---- Responsive pour tablettes et mobiles ---- */
+        @media (max-width: 1024px) {
+            .logo img {
+                width: 120px; /* légèrement plus petit sur tablette */
+            }
+
+            footer img {
+                width: 100px; /* logo footer réduit sur tablette */
+            }
+        }
+
+        @media (max-width: 768px) {
+            .logo img {
+                width: 100px; /* taille mobile pour header */
+            }
+
+            footer img {
+                width: 80px;  /* taille mobile pour footer */
+            }
         }
 
         /* Buttons */
@@ -728,10 +755,14 @@
             padding: var(--spacing-xl) var(--spacing-lg);
         }
 
+       /* ---- Logo footer ---- */
         footer img {
-            width: 150px; /* ajuste la taille selon ton besoin */
-            height: auto; /* conserve les proportions */
+            width: 120px;   /* taille par défaut sur desktop */
+            height: auto;
+            display: block;
+            margin: 0 auto; /* centre le logo dans le footer */
         }
+
         
         .footer-content {
             max-width: 1400px;
