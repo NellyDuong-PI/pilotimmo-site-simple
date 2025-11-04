@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nos Réalisations - Piloti Immo</title>
+    <link rel="stylesheet" href="style.css"> <!-- Lien vers votre fichier CSS -->
+    <style>
+        /* Styles rapides pour la mise en page */
+        body { font-family: Arial, sans-serif; margin: 0; padding: 0; line-height: 1.6; }
+        header { 
+            background: url('header-background.jpg') no-repeat center center/cover; 
+            color: white; text-align: center; padding: 120px 20px;
+        }
+        header h1 { font-size: 3em; margin: 0; }
+        section { padding: 60px 20px; max-width: 1200px; margin: 0 auto; }
+        .success-item, .solution-item { margin-bottom: 40px; border-bottom: 1px solid #ddd; padding-bottom: 20px; }
+        h2, h3 { color: #333; }
+        .checklist { list-style: none; padding-left: 0; }
+        .checklist li::before { content: "✓ "; color: green; font-weight: bold; }
+        .solutions { display: flex; flex-wrap: wrap; gap: 20px; }
+        .solution-item { flex: 1 1 250px; border: 1px solid #ddd; padding: 20px; border-radius: 10px; text-align: center; }
+        .solution-item span { font-size: 2em; display: block; margin-bottom: 10px; }
+        form { display: flex; flex-direction: column; gap: 15px; max-width: 600px; margin: 0 auto; }
+        input, textarea, button { padding: 10px; border-radius: 5px; border: 1px solid #ccc; width: 100%; }
+        button { background: #007BFF; color: white; border: none; cursor: pointer; }
+        button:hover { background: #0056b3; }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>Nos Réalisations</h1>
+        <p>Découvrez nos projets sur-mesure pour valoriser votre patrimoine immobilier</p>
+    </header>
+
+    <!-- Section Découvrez nos succès -->
+    <section>
+        <h2>Découvrez nos succès</h2>
+        <p>Chaque projet est unique. Nous apportons des solutions sur-mesure pour valoriser votre patrimoine immobilier.</p>
+
+        <!-- Projet 1 -->
+        <div class="success-item">
+            <h3>Passoire énergétique : de G à D</h3>
+            <p>Transformation complète d'un bien immobilier classé G en classe D, avec amélioration significative de la performance énergétique et valorisation locative.</p>
+            <h4>Notre accompagnement</h4>
+            <ul class="checklist">
+                <li>Audit énergétique complet</li>
+                <li>Établissement du budget des travaux</li>
+                <li>Coordination et mise en œuvre</li>
+                <li>Valorisation et mise en location optimisée</li>
+            </ul>
+        </div>
+
+        <!-- Projet 2 -->
+        <div class="success-item">
+            <h3>Studio sinistré : renaissance complète</h3>
+            <p>Suite à des dégâts des eaux importants, accompagnement complet de la rénovation jusqu'à la valorisation du bien en location puis en vente.</p>
+            <h4>Notre accompagnement</h4>
+            <ul class="checklist">
+                <li>Audit des dommages et solutions</li>
+                <li>Gestion du conflit avec les assurances</li>
+                <li>Mise en œuvre de la rénovation complète</li>
+                <li>Valorisation de sortie : location puis vente</li>
+            </ul>
+        </div>
+
+        <!-- Projet 3 -->
+        <div class="success-item">
+            <h3>Succession : valorisation d'une résidence secondaire</h3>
+            <p>Transformation d'une résidence secondaire vide et non louée en bien locatif rentable, avec financement et suivi complet des travaux.</p>
+            <h4>Notre accompagnement</h4>
+            <ul class="checklist">
+                <li>Audit du bien et opportunités</li>
+                <li>Budget détaillé des travaux nécessaires</li>
+                <li>Recherche et montage du financement</li>
+                <li>Suivi des travaux et mise en location</li>
+            </ul>
+        </div>
+
+        <!-- Projet 4 -->
+        <div class="success-item">
+            <h3>Logement occupé : résolution juridique</h3>
+            <p>Prise en charge complète d'une situation complexe de logement occupé, en collaboration avec avocats et huissiers jusqu'à résolution satisfaisante.</p>
+            <h4>Notre accompagnement</h4>
+            <ul class="checklist">
+                <li>Analyse de la situation juridique</li>
+                <li>Coordination avec avocats et huissiers</li>
+                <li>Suivi des démarches légales</li>
+                <li>Résolution négociée et satisfaisante</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Section Vos problèmes, nos solutions -->
+    <section>
+        <h2>Vos problèmes, nos solutions</h2>
+        <p>Ne laissez pas votre patrimoine se détériorer. Nous transformons les défis immobiliers en opportunités de valorisation.</p>
+        <div class="solutions">
+            <div class="solution-item">
+                <span>🏗️</span>
+                <h3>Rénovation</h3>
+                <p>De l'audit à la livraison, nous gérons vos projets de A à Z</p>
+            </div>
+            <div class="solution-item">
+                <span>⚡</span>
+                <h3>Performance énergétique</h3>
+                <p>Valorisez votre bien en améliorant son classement énergétique</p>
+            </div>
+            <div class="solution-item">
+                <span>⚖️</span>
+                <h3>Gestion juridique</h3>
+                <p>Résolvez les situations complexes avec notre réseau d'experts</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section Formulaire -->
+    <section>
+        <h2>Parlons de votre projet</h2>
+        <p>Remplissez ce formulaire et nous vous recontacterons rapidement pour discuter de vos besoins.</p>
+        <form action="mailto:contact@pilotimmo.fr" method="post" enctype="text/plain">
+            <input type="text" name="nom" placeholder="Votre nom" required>
+            <input type="email" name="email" placeholder="Votre email" required>
+            <input type="tel" name="tel" placeholder="Votre téléphone">
+            <textarea name="message" rows="5" placeholder="Décrivez votre projet..." required></textarea>
+            <button type="submit">Envoyer</button>
+        </form>
+    </section>
+
+</body>
+</html>
