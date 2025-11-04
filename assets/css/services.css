@@ -112,12 +112,19 @@
    ========================================================================== */
 .cta-section {
     background: var(--white);   /* Fond blanc */
-    color: var(--text);          /* Texte gris foncé */
     text-align: center;
     padding: 80px var(--spacing-lg);
 }
 
+/* Forcer la couleur du texte dans la CTA */
+.cta-section h2,
+.cta-section p {
+    color: var(--text) !important;
+}
+
+/* Bouton bleu pour contraste */
 .cta-section .btn-primary {
     background: linear-gradient(135deg, var(--secondary), #2563eb);
     color: var(--white);
 }
+
