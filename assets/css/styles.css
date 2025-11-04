@@ -589,15 +589,51 @@ header .logo img {
     opacity: 0.9;
 }
 
+/* Conteneur principal */
 .cta-form-wrapper {
     display: flex;
-    justify-content: center; /* centre le bloc */
+    flex-direction: column; /* texte au-dessus du formulaire */
+    align-items: center; /* centre horizontalement */
+    gap: 2rem; /* espace entre texte et formulaire */
+    padding: 2rem; /* optionnel, espace autour */
 }
 
+/* Bénéfices */
 .cta-benefits-box {
-    text-align: center; /* centre le texte à l'intérieur */
+    text-align: center; /* centre le texte et les icônes */
 }
 
+/* Titre des bénéfices */
+.benefits-title {
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+/* Chaque ligne de bénéfice */
+.benefit-item-white {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* centre les items horizontalement */
+    margin-bottom: 0.5rem;
+}
+
+/* Icône ✓ */
+.benefit-check-white {
+    color: #28a745; /* vert check */
+    font-weight: bold;
+    margin-right: 0.5rem;
+}
+
+/* Texte du bénéfice */
+.benefit-text-dark {
+    color: #333;
+}
+
+/* Formulaire */
+.cta-form-box {
+    width: 100%;
+    max-width: 500px; /* limite la largeur du formulaire */
+}
 
 /* ==========================================================================
    9.5 WHO WE ARE SECTION
