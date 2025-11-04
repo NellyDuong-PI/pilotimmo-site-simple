@@ -176,7 +176,7 @@ p {
 
 /* Ajustement taille logo header */
 header .logo img {
-    max-width: 80px !important; /* réduit la largeur et force le style */
+    max-width: 40px !important; /* réduit la largeur et force le style */
     height: auto !important;     /* garde les proportions */
     display: block;
 }
