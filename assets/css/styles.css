@@ -632,7 +632,7 @@ header .logo img {
 /* Formulaire */
 .cta-form-box {
     width: 100%;
-    max-width: 500px; /* limite la largeur du formulaire */
+    max-width: 1000px; /* limite la largeur du formulaire */
 }
 
 /* ==========================================================================
