@@ -171,6 +171,19 @@
             width: 100%;
         }
 
+        .nav-links.mobile-active {
+            display: flex !important;
+            flex-direction: column;
+            position: fixed;
+            top: 70px;
+            left: 0;
+            right: 0;
+            background: rgba(15, 23, 42, 0.98);
+            padding: 2rem;
+            gap: 1.5rem;
+            animation: slideDown 0.3s ease;
+        }
+        
         .cta-nav {
             background: linear-gradient(135deg, var(--secondary), #2563eb);
             padding: 0.6rem 1.5rem !important;
