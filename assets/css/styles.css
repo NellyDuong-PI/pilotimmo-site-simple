@@ -231,6 +231,16 @@ header .logo img {
     cursor: pointer;
 }
 
+@media (max-width: 768px) {
+  .mobile-menu-btn {
+    display: block; /* <-- pour que le bouton s'affiche sur mobile */
+  }
+
+  /* Tu peux aussi cacher le menu desktop à ce moment-là */
+  .desktop-menu {
+    display: none;
+  }
+}
 
 
 /* ==========================================================================
