@@ -231,14 +231,30 @@ header .logo img {
     cursor: pointer;
 }
 
+/* --- afficher le bouton sur mobile --- */
 @media (max-width: 768px) {
   .mobile-menu-btn {
-    display: block; /* <-- pour que le bouton s'affiche sur mobile */
+    display: block;
+    position: relative;
+    z-index: 2000;
   }
 
-  /* Tu peux aussi cacher le menu desktop à ce moment-là */
-  .desktop-menu {
+  /* cacher le menu par défaut */
+  .nav-links {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px; /* adapte selon ta navbar */
+    right: 0;
+    background: #fff;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+  }
+
+  /* afficher le menu quand actif */
+  .nav-links.active {
+    display: flex;
   }
 }
 
