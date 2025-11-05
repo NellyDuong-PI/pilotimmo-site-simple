@@ -249,6 +249,7 @@ header .logo img {
     background: #fff;
     width: 100%;
     text-align: center;
+    padding: 1rem 0;
     z-index: 1000;
   }
 
@@ -256,6 +257,20 @@ header .logo img {
   .nav-links.active {
     display: flex;
   }
+
+
+  .nav-links li {
+    margin: 0.5rem 0;
+  }
+
+  .nav-links li a {
+    display: block;
+    color: #333;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    font-weight: 500;
+  }
+   
 }
 
 
