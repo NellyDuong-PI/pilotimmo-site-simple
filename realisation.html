@@ -4,12 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nos Réalisations - Pilotimmo</title>
-     <!-- Lien vers le CSS global -->
+    <!-- CSS Global -->
     <link rel="stylesheet" href="assets/css/styles.css">
+    <!-- CSS dédié Réalisations -->
     <link rel="stylesheet" href="assets/css/realisation.css">
+    <!-- AOS pour animations scroll -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
 </head>
 
-<!-- Bandeau cookies global -->
+<body>
+
+<!-- Bandeau cookies -->
 <div id="cookie-banner" class="cookie-banner">
   <div class="cookie-banner-inner">
     <span>Ce site utilise des cookies pour améliorer votre expérience.</span>
@@ -17,181 +22,161 @@
     <button id="decline-cookies">Refuser</button>
   </div>
 </div>
-
-<!-- Script cookies -->
 <script src="assets/js/cookies.js"></script>
 
-    
-<body>
-
-     <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo-container">
-                <a href="index.html" class="logo-link">
-                    <img src="images/logo.png" alt="Logo Pilotimmo" class="logo-img">
-                    <div class="logo">PILOTIMMO</div>
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="realisation.html">Realisations</a></li>
-                <li><a href="contact.html" class="cta-nav">Diagnostic Offert</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Menu mobile">☰</button>
-        </nav>
-    </header>
-
-    <!-- Hero Section -->
-    <section class="services-hero">
-        <div class="services-hero-content">
-            <h1>Nos Réalisations</h1>
-            <p>Experts en Biens Complexes<br>
-            Des projets immobiliers complexes transformés en succè.<br>
-            Pour plus de serenité, plus de tranquilité et plus de rentabilité.</p>
+<!-- Header -->
+<header class="header">
+    <nav class="nav-container">
+        <div class="logo-container">
+            <a href="index.html" class="logo-link">
+                <img src="images/logo.png" alt="Logo Pilotimmo" class="logo-img">
+                <div class="logo">PILOTIMMO</div>
+            </a>
         </div>
-    </section>
+        <ul class="nav-links">
+            <li><a href="services.html">Services</a></li>
+            <li><a href="realisation.html">Réalisations</a></li>
+            <li><a href="contact.html" class="cta-nav">Diagnostic Offert</a></li>
+        </ul>
+        <button class="mobile-menu-btn" aria-label="Menu mobile">☰</button>
+    </nav>
+</header>
 
+<!-- Hero -->
+<section class="hero">
+    <div class="hero-content">
+        <h1>Nos Réalisations</h1>
+        <p>Experts en biens complexes. <br>
+           Des projets immobiliers transformés en succès, pour plus de sérénité, tranquillité et rentabilité.</p>
+    </div>
+</section>
 
-    <section class="section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Découvrez nos succès</h2>
+<!-- Section Projets -->
+<section class="section">
+    <div class="container">
+        <div class="section-title"><h2>Découvrez nos succès</h2></div>
+        <p class="section-subtitle">Chaque projet est unique. Nous apportons des solutions sur-mesure pour valoriser votre patrimoine immobilier.</p>
+
+        <div class="projects-grid">
+            <div class="project-card" data-aos="fade-up">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop" alt="Rénovation appartement">
+                    <span class="project-badge">Rénovation Complète</span>
+                </div>
+                <div class="project-content">
+                    <h3>Passoire énergétique : de G à D</h3>
+                    <p>Transformation complète d'un bien immobilier classé G en classe D...</p>
+                    <ul>
+                        <li>Audit énergétique complet</li>
+                        <li>Établissement du budget des travaux</li>
+                        <li>Coordination et mise en œuvre</li>
+                        <li>Valorisation et mise en location optimisée</li>
+                    </ul>
+                </div>
             </div>
-            <p class="section-subtitle">
-                Chaque projet est unique. Nous apportons des solutions sur-mesure pour valoriser votre patrimoine immobilier.
-            </p>
 
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?w=800&h=500&fit=crop" alt="Rénovation appartement">
-                        <span class="project-badge">Rénovation Complète</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Passoire énergétique : de G à D</h3>
-                        <p class="project-description">
-                            Transformation complète d'un bien immobilier classé G en classe D, avec amélioration significative de la performance énergétique et valorisation locative.
-                        </p>
-                        <div class="project-details">
-                            <h4>Notre accompagnement</h4>
-                            <ul>
-                                <li>Audit énergétique complet</li>
-                                <li>Établissement du budget des travaux</li>
-                                <li>Coordination et mise en œuvre</li>
-                                <li>Valorisation et mise en location optimisée</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=500&fit=crop" alt="Studio rénové">
+                    <span class="project-badge">Rénovation Complète</span>
                 </div>
-
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?w=800&h=500&fit=crop" alt="Studio rénové">
-                        <span class="project-badge">Rénovation Complète</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Studio sinistré : renaissance complète</h3>
-                        <p class="project-description">
-                            Suite à des dégâts des eaux importants, accompagnement complet de la rénovation jusqu'à la valorisation du bien en location puis en vente.
-                        </p>
-                        <div class="project-details">
-                            <h4>Notre accompagnement</h4>
-                            <ul>
-                                <li>Audit des dommages et solutions</li>
-                                <li>Gestion du conflit avec les assurances</li>
-                                <li>Mise en œuvre de la rénovation complète</li>
-                                <li>Valorisation du sortie - location puis vente</li>
-                            </ul>
-                        </div>
-                    </div>
+                <div class="project-content">
+                    <h3>Studio sinistré : renaissance complète</h3>
+                    <p>Suite à des dégâts des eaux importants, accompagnement complet...</p>
+                    <ul>
+                        <li>Audit des dommages et solutions</li>
+                        <li>Gestion du conflit avec les assurances</li>
+                        <li>Mise en œuvre de la rénovation complète</li>
+                        <li>Valorisation du sortie - location puis vente</li>
+                    </ul>
                 </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop" alt="Maison succession">
-                        <span class="project-badge">Succession</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Succession : valorisation d'une résidence secondaire</h3>
-                        <p class="project-description">
-                            Transformation d'une résidence secondaire vide et non louée en bien locatif rentable, avec financement et suivi complet des travaux.
-                        </p>
-                        <div class="project-details">
-                            <h4>Notre accompagnement</h4>
-                            <ul>
-                                <li>Audit du bien et opportunités</li>
-                                <li>Budget détaillé des travaux nécessaires</li>
-                                <li>Recherche et montage du financement</li>
-                                <li>Suivi des travaux et mise en location</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1568605114967-8130f3a36994?w=800&h=500&fit=crop" alt="Maison succession">
+                    <span class="project-badge">Succession</span>
                 </div>
+                <div class="project-content">
+                    <h3>Succession : valorisation d'une résidence secondaire</h3>
+                    <p>Transformation d'une résidence secondaire vide et non louée...</p>
+                    <ul>
+                        <li>Audit du bien et opportunités</li>
+                        <li>Budget détaillé des travaux nécessaires</li>
+                        <li>Recherche et montage du financement</li>
+                        <li>Suivi des travaux et mise en location</li>
+                    </ul>
+                </div>
+            </div>
 
-                <div class="project-card">
-                    <div class="project-image">
-                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop" alt="Logement occupé">
-                        <span class="project-badge">Gestion juridique</span>
-                    </div>
-                    <div class="project-content">
-                        <h3>Logement occupé : résolution juridique</h3>
-                        <p class="project-description">
-                            Prise en charge complète d'une situation complexe de logement occupé, en collaboration avec avocats et huissiers jusqu'à résolution satisfaisante.
-                        </p>
-                        <div class="project-details">
-                            <h4>Notre accompagnement</h4>
-                            <ul>
-                                <li>Analyse de la situation juridique</li>
-                                <li>Coordination avec avocats et huissiers</li>
-                                <li>Suivi des démarches légales</li>
-                                <li>Résolution négociée et satisfaisante</li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="project-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="project-image">
+                    <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=800&h=500&fit=crop" alt="Logement occupé">
+                    <span class="project-badge">Gestion juridique</span>
+                </div>
+                <div class="project-content">
+                    <h3>Logement occupé : résolution juridique</h3>
+                    <p>Prise en charge complète d'une situation complexe de logement occupé...</p>
+                    <ul>
+                        <li>Analyse de la situation juridique</li>
+                        <li>Coordination avec avocats et huissiers</li>
+                        <li>Suivi des démarches légales</li>
+                        <li>Résolution négociée et satisfaisante</li>
+                    </ul>
                 </div>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
-    <section class="section solutions-section">
-        <div class="container">
-            <div class="section-title">
-                <h2>Vos problèmes, nos solutions</h2>
-            </div>
-            <p class="section-subtitle">
-                Ne laissez pas votre patrimoine se détériorer. Nous transformons les défis immobiliers en opportunités de valorisation.
-            </p>
+<!-- Section Solutions -->
+<section class="section solutions-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Vos problèmes, nos solutions</h2>
+        </div>
+        <p class="section-subtitle">
+            Ne laissez pas votre patrimoine se détériorer. Nous transformons les défis immobiliers en opportunités de valorisation.
+        </p>
 
-            <div class="solutions-grid">
-                <div class="solution-card">
-                    <div class="solution-icon">🏗️</div>
-                    <h3>Rénovation</h3>
-                    <p>De l'audit à la livraison, nous gérons vos projets de A à Z</p>
-                </div>
-
-                <div class="solution-card">
-                    <div class="solution-icon">⚡</div>
-                    <h3>Performance énergétique</h3>
-                    <p>Valorisez votre bien en améliorant son classement énergétique</p>
-                </div>
-
-                <div class="solution-card">
-                    <div class="solution-icon">⚖️</div>
-                    <h3>Gestion juridique</h3>
-                    <p>Résolvez les situations complexes avec notre réseau d'experts</p>
-                </div>
+        <div class="solutions-grid">
+            <div class="solution-card" data-aos="fade-up">
+                <div class="solution-icon">🏗️</div>
+                <h3>Rénovation</h3>
+                <p>De l'audit à la livraison, nous gérons vos projets de A à Z</p>
             </div>
 
-          <div class="section-title">
-                <h2>Ils nous font confiance</h2>
+            <div class="solution-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="solution-icon">⚡</div>
+                <h3>Performance énergétique</h3>
+                <p>Valorisez votre bien en améliorant son classement énergétique</p>
             </div>
-            <p class="section-subtitle">
-                Découvrez les témoignages de nos clients satisfaits
-            </p>
 
-            <div class="testimonials-grid">
-                <div class="testimonial-card">
+            <div class="solution-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="solution-icon">⚖️</div>
+                <h3>Gestion juridique</h3>
+                <p>Résolvez les situations complexes avec notre réseau d'experts</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- Section Témoignages -->
+<section class="section testimonials-section">
+    <div class="container">
+        <div class="section-title">
+            <h2>Ils nous font confiance</h2>
+        </div>
+        <p class="section-subtitle">
+            Découvrez les témoignages de nos clients satisfaits
+        </p>
+
+        <!-- Swiper Carousel -->
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <!-- Témoignage 1 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
                         "Pilotimmo a transformé mon appartement classé G en bien performant. Leur accompagnement de A à Z m'a permis d'augmenter significativement ma valeur locative. Je recommande vivement leurs services !"
@@ -202,7 +187,8 @@
                     </div>
                 </div>
 
-                <div class="testimonial-card">
+                <!-- Témoignage 2 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
                         "Après des dégâts des eaux catastrophiques, je ne savais plus où donner de la tête. L'équipe a géré l'intégralité du dossier avec l'assurance et coordonné tous les travaux. Un vrai soulagement !"
@@ -213,21 +199,25 @@
                     </div>
                 </div>
 
-                <div class="testimonial-card">
+
+                <!-- Témoignage 3 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Suite à une succession, nous avions une maison inoccupée depuis des années. Pilotimmo nous a aidés à la valoriser et à trouver un financement pour les travaux. Aujourd'hui, elle génère des revenus réguliers."
+                    "Suite à une succession, nous avions une maison inoccupée depuis des années. Pilotimmo nous a aidés à la valoriser et à trouver un financement pour les travaux. Aujourd'hui, elle génère des revenus réguliers."
                     </p>
                     <div class="testimonial-author">
-                        <strong>Sophie et Marc L.</strong>
+                        <strong>Sophie et Marc L</strong>
                         <span>Héritiers</span>
                     </div>
                 </div>
+               
 
-                <div class="testimonial-card">
+                 <!-- Témoignage 4 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "Situation locative très compliquée que je n'arrivais pas à résoudre seul. Grâce à leur réseau d'avocats et leur expertise, le problème a été réglé en quelques mois. Professionnalisme exemplaire."
+                      "Situation locative très compliquée que je n'arrivais pas à résoudre seul. Grâce à leur réseau d'avocats et leur expertise, le problème a été réglé en quelques mois. Professionnalisme exemplaire.
                     </p>
                     <div class="testimonial-author">
                         <strong>Thomas R.</strong>
@@ -235,21 +225,24 @@
                     </div>
                 </div>
 
-                <div class="testimonial-card">
+              <!-- Témoignage 5 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "J'ai fait appel à Pilotimmo pour rénover un studio avant de le vendre. Non seulement les travaux ont été réalisés dans les temps, mais j'ai vendu 25% plus cher que prévu. Excellente rentabilité !"
+                      "J'ai fait appel à Pilotimmo pour rénover un studio avant de le vendre. Non seulement les travaux ont été réalisés dans les temps, mais j'ai vendu 25% plus cher que prévu. Excellente rentabilité !"
                     </p>
                     <div class="testimonial-author">
                         <strong>Nathalie B.</strong>
                         <span>Propriétaire à Villeurbanne</span>
                     </div>
                 </div>
+                
 
-                <div class="testimonial-card">
+                 <!-- Témoignage 6 -->
+                <div class="swiper-slide testimonial-card">
                     <div class="testimonial-stars">★★★★★</div>
                     <p class="testimonial-text">
-                        "En tant qu'investisseur, je n'ai pas le temps de gérer les rénovations. Pilotimmo s'occupe de tout : audits, devis, coordination, réception des travaux. Je peux me concentrer sur mes projets."
+                      "En tant qu'investisseur, je n'ai pas le temps de gérer les rénovations. Pilotimmo s'occupe de tout : audits, devis, coordination, réception des travaux. Je peux me concentrer sur mes projets."
                     </p>
                     <div class="testimonial-author">
                         <strong>Alexandre P.</strong>
@@ -257,87 +250,89 @@
                     </div>
                 </div>
             </div>
+
+            <!-- Pagination -->
+            <div class="swiper-pagination"></div>
+
+            <!-- Navigation -->
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
         </div>
-    </section>
+    </div>
+</section>
 
 
-            
-            <div class="section-title">
-                <h2>Parlons de votre projet</h2>
+
+
+    
+<section class="section">
+    <div class="container">
+        <div class="section-title"><h2>Ils nous font confiance</h2></div>
+        <p class="section-subtitle">Découvrez les témoignages de nos clients satisfaits</p>
+
+        <div class="testimonials-grid">
+            <div class="testimonial-card" data-aos="fade-up">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Pilotimmo a transformé mon appartement classé G en bien performant. Leur accompagnement de A à Z m'a permis d'augmenter significativement ma valeur locative. Je recommande vivement leurs services !"</p>
+                <div class="testimonial-author"><strong>Marie D.</strong> <span>Propriétaire à Lyon</span></div>
             </div>
-            <p class="section-subtitle">
-                Remplissez ce formulaire et nous vous recontacterons rapidement pour discuter de vos besoins.
-            </p>
-
-           <!-- Right side - HubSpot Form -->
-            <div class="hubspot-form-white-box">
-                <script src="https://js-eu1.hsforms.net/forms/embed/v2.js" charset="utf-8"></script>
-                <script>
-                    hbspt.forms.create({
-                        region: "eu1",
-                        portalId: "147166352",
-                        formId: "1badffb2-5eb3-407c-8c89-79bb020e1f89"
-                    });
-                </script>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="100">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Après des dégâts des eaux catastrophiques, je ne savais plus où donner de la tête. L'équipe a géré l'intégralité du dossier avec l'assurance et coordonné tous les travaux. Un vrai soulagement !"</p>
+                <div class="testimonial-author"><strong>Jean-Pierre M.</strong> <span>Investisseur immobilier</span></div>
             </div>
-            
-        </div>
-    </section>
-
-      <!-- Footer -->
-    <footer class="footer">
-
-         <!-- Colonne 1 -->
-        <div class="footer-content">
-            <div class="footer-section">
-                <img src="assets/images/logo.png" alt="Pilotimmo" class="footer-logo" />
-                <h4 class="footer-title">PILOTIMMO</h4>
-                <p class="footer-text">Expert en valorisation et gestion de patrimoine locatif</p>
-                <p class="footer-text">Spécialistes des biens complexes : vacance, succession, passoires énergétiques</p>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="200">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Suite à une succession, nous avions une maison inoccupée depuis des années. Pilotimmo nous a aidés à la valoriser et à trouver un financement pour les travaux. Aujourd'hui, elle génère des revenus réguliers."</p>
+                <div class="testimonial-author"><strong>Sophie et Marc L.</strong> <span>Héritiers</span></div>
             </div>
-
-             <!-- Colonne 2 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Navigation</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="partenaires.html">Partenaires</a></li>
-                    <li><a href="recrutement.html">Nous rejoindre</a></li>
-                </ul>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="300">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"Situation locative très compliquée que je n'arrivais pas à résoudre seul. Grâce à leur réseau d'avocats et leur expertise, le problème a été réglé en quelques mois. Professionnalisme exemplaire."</p>
+                <div class="testimonial-author"><strong>Thomas R.</strong> <span>Propriétaire bailleur</span></div>
             </div>
-
-            <!-- Colonne 3 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Informations</h4>
-                <ul class="footer-links">
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cgu.html">CGU</a></li>
-                    <li><a href="mentions-légales.html">Mentions légales</a></li>
-                </ul>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="400">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"J'ai fait appel à Pilotimmo pour rénover un studio avant de le vendre. Non seulement les travaux ont été réalisés dans les temps, mais j'ai vendu 25% plus cher que prévu. Excellente rentabilité !"</p>
+                <div class="testimonial-author"><strong>Nathalie B.</strong> <span>Propriétaire à Villeurbanne</span></div>
             </div>
-
-            <!-- Colonne 4 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Contactez nous </h4>
-                <p class="footer-text">Email : hello@pilotimmo.fr</p>
-                <p class="footer-text">Tél : 07.67.38.23.68 </p>
-                <p class="footer-text">  </p>
-                <p class="footer-text"><a href="contact.html" class="cta-nav">Diagnostic Offert</a></p>
+            <div class="testimonial-card" data-aos="fade-up" data-aos-delay="500">
+                <div class="testimonial-stars">★★★★★</div>
+                <p class="testimonial-text">"En tant qu'investisseur, je n'ai pas le temps de gérer les rénovations. Pilotimmo s'occupe de tout : audits, devis, coordination, réception des travaux. Je peux me concentrer sur mes projets."</p>
+                <div class="testimonial-author"><strong>Alexandre P.</strong> <span>Investisseur multi-biens</span></div>
             </div>
         </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Pilotimmo - Tous droits réservés.</p>
-        </div>
-    </footer>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Pilotimmo - Tous droits réservés.</p>
-        </div>
-    </footer>
+    </div>
+</section>
 
-    <script src="assets/js/script.js"></script>
+<!-- HubSpot Form -->
+<section class="section">
+    <div class="container">
+        <div class="section-title"><h2>Parlons de votre projet</h2></div>
+        <p class="section-subtitle">Remplissez ce formulaire et nous vous recontacterons rapidement pour discuter de vos besoins.</p>
+        <div class="hubspot-form-white-box">
+            <script src="https://js-eu1.hsforms.net/forms/embed/v2.js" charset="utf-8"></script>
+            <script>
+                hbspt.forms.create({
+                    region: "eu1",
+                    portalId: "147166352",
+                    formId: "1badffb2-5eb3-407c-8c89-79bb020e1f89"
+                });
+            </script>
+        </div>
+    </div>
+</section>
+
+<!-- Footer -->
+<footer class="footer">
+    <!-- Ton contenu footer existant -->
+</footer>
+
+<!-- Scripts -->
+<script src="assets/js/script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+<script>
+  AOS.init({ duration: 800, easing: 'ease-in-out', once: true });
+</script>
 </body>
 </html>
