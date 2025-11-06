@@ -379,6 +379,10 @@ header .logo img {
     margin-right: auto;
 }
 
+.hero-white-text {
+    color: white;
+}
+
 /* Persona Cards in Hero */
 .persona-selector {
     display: flex;
