@@ -380,7 +380,7 @@ header .logo img {
 }
 
 .hero-white-text {
-    color: white;
+    color: white; !important
 }
 
 /* Persona Cards in Hero */
