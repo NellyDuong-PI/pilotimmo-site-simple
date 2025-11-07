@@ -1,194 +1,352 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contactez Pilotimmo pour un diagnostic gratuit. Obtenez un échange conseil de 30min offert avec nos experts en valorisation immobilière.">
-    <title>Contact - Pilotimmo | Diagnostic Gratuit & Conseil Expert</title>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="contact.css">
-</head>
+/* ==============================
+   CONTACT PAGE DESIGN
+   ============================== */
 
-<!-- Bandeau cookies global -->
-<div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-banner-inner">
-    <span>Ce site utilise des cookies pour améliorer votre expérience.</span>
-    <button id="accept-cookies">Accepter</button>
-    <button id="decline-cookies">Refuser</button>
-  </div>
-</div>
+.contact-section {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-lg);
+}
 
-<!-- Script cookies -->
-<script src="assets/js/cookies.js"></script>
-    
-<body>
-     <!-- Header Navigation -->
-    <header class="header">
-        <nav class="nav-container">
-            <div class="logo-container">
-                <a href="index.html" class="logo-link">
-                    <img src="assets/images/logo.png" alt="Logo Pilotimmo" class="logo-img">
-                    <div class="logo">PILOTIMMO</div>
-                </a>
-            </div>
-            <ul class="nav-links">
-                <li><a href="services.html">Services</a></li>
-                <li><a href="realisation.html">Realisations</a></li>
-                <li><a href="contact.html" class="cta-nav">Diagnostic Offert</a></li>
-            </ul>
-            <button class="mobile-menu-btn" aria-label="Menu mobile">☰</button>
-        </nav>
-    </header>
+/* ---- GRID principale ---- */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: var(--spacing-xl);
+    align-items: start;
+}
 
-    <!-- Page Hero -->
-    <section class="page-hero">
-        <div class="container">
-            <h1>Contactez-nous</h1>
-            <p>Obtenez un diagnostic gratuit et personnalisé</p>
-        </div>
-    </section>
+@media (max-width: 900px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+}
 
-    <!-- Contact Form Section -->
-    <section class="section">
-        <div class="container">
-            <div class="cta-content-wrapper">
-                <!-- Left side - Benefits -->
-                <div class="cta-benefits">
-                    <h2 style="color: var(--primary); margin-bottom: 2rem;">Pourquoi nous contacter ?</h2>
-                    <div class="benefit-item" style="background: var(--light);">
-                        <span class="benefit-check" style="background: linear-gradient(135deg, var(--secondary), var(--accent));">✓</span>
-                        <span class="benefit-text" style="color: var(--primary);">Échange Conseil 30min offert</span>
-                    </div>
-                    <div class="benefit-item" style="background: var(--light);">
-                        <span class="benefit-check" style="background: linear-gradient(135deg, var(--secondary), var(--accent));">✓</span>
-                        <span class="benefit-text" style="color: var(--primary);">Avis d'expert</span>
-                    </div>
-                    <div class="benefit-item" style="background: var(--light);">
-                        <span class="benefit-check" style="background: linear-gradient(135deg, var(--secondary), var(--accent));">✓</span>
-                        <span class="benefit-text" style="color: var(--primary);">Solution simple à mettre en place</span>
-                    </div>
-                    <div class="benefit-item" style="background: var(--light);">
-                        <span class="benefit-check" style="background: linear-gradient(135deg, var(--secondary), var(--accent));">✓</span>
-                        <span class="benefit-text" style="color: var(--primary);">Pas de blabla, que du concret</span>
-                    </div>
-                    <div class="benefit-item" style="background: var(--light);">
-                        <span class="benefit-check" style="background: linear-gradient(135deg, var(--secondary), var(--accent));">✓</span>
-                        <span class="benefit-text" style="color: var(--primary);">Trouver des solutions à vos problèmes</span>
-                    </div>
-                </div>
-                
-                <!-- Right side - HubSpot Form -->
-                <div class="hubspot-form-container">
-                    <script src="https://js-eu1.hsforms.net/forms/embed/v2.js" charset="utf-8"></script>
-                    <script>
-                        hbspt.forms.create({
-                            region: "eu1",
-                            portalId: "147166352",
-                            formId: "1badffb2-5eb3-407c-8c89-79bb020e1f89"
-                        });
-                    </script>
-                </div>
-            </div>
-        </div>
-    </section>
+.contact-card {
+    width: 100%;
+    max-width: none;
+}
 
-    <!-- Contact Info -->
-    <section class="section section-light">
-        <div class="container">
-            <h2 class="section-title">Nos Coordonnées</h2>
-            <div class="grid grid-3">
-                <div class="contact-info-card">
-                    <span class="contact-icon">📧</span>
-                    <h3>Email</h3>
-                    <p>contact@pilotimmo.fr</p>
-                </div>
-                <div class="contact-info-card">
-                    <span class="contact-icon">📞</span>
-                    <h3>Téléphone</h3>
-                    <p>01 XX XX XX XX</p>
-                </div>
-                <div class="contact-info-card">
-                    <span class="contact-icon">📍</span>
-                    <h3>Adresse</h3>
-                    <p>Paris, France</p>
-                </div>
-            </div>
-        </div>
-    </section>
+/* ---- Bloc gauche : infos ---- */
+.contact-info {
+    background: var(--white);
+    padding: var(--spacing-lg);
+    border-radius: var(--radius-lg);
+    box-shadow: var(--shadow-md);
+    border-left: 6px solid var(--secondary);
+    animation: fadeInUp 0.6s ease;
+}
 
-   <!-- Footer -->
-    <footer class="footer">
+.contact-info h2 {
+    margin-bottom: var(--spacing-md);
+    color: var(--primary);
+}
 
-         <!-- Colonne 1 -->
-        <div class="footer-content">
-            <div class="footer-section">
-                <img src="assets/images/logo.png" alt="Pilotimmo" class="footer-logo" />
-                <h4 class="footer-title">PILOTIMMO</h4>
-                <p class="footer-text">Expert en valorisation et gestion de patrimoine locatif</p>
-                <p class="footer-text">Spécialistes des biens complexes : vacance, succession, passoires énergétiques</p>
-            </div>
+.contact-item {
+    display: flex;
+    align-items: flex-start;
+    gap: var(--spacing-sm);
+    margin-bottom: var(--spacing-md);
+}
 
-             <!-- Colonne 2 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Navigation</h4>
-                <ul class="footer-links">
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="services.html">Services</a></li>
-                    <li><a href="partenaires.html">Partenaires</a></li>
-                    <li><a href="recrutement.html">Nous rejoindre</a></li>
-                </ul>
-            </div>
+.contact-item .icon {
+    font-size: 1.8rem;
+    color: var(--secondary);
+}
 
-            <!-- Colonne 3 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Informations</h4>
-                <ul class="footer-links">
-                    <li><a href="a-propos.html">À propos</a></li>
-                    <li><a href="contact.html">Contact</a></li>
-                    <li><a href="cgu.html">CGU</a></li>
-                    <li><a href="mentions-légales.html">Mentions légales</a></li>
-                </ul>
-            </div>
+.contact-item h3 {
+    font-size: 1.2rem;
+    color: var(--primary);
+}
 
-            <!-- Colonne 4 -->
-            <div class="footer-section">
-                <h4 class="footer-title">Contactez nous </h4>
-                <p class="footer-text">Email : hello@pilotimmo.fr</p>
-                <p class="footer-text">Tél : 07.67.38.23.68 </p>
-                <p class="footer-text">  </p>
-                <p class="footer-text"><a href="contact.html" class="cta-nav">Diagnostic Offert</a></p>
-            </div>
-        </div>
-        
-        <div class="footer-bottom">
-            <p>&copy; 2025 Pilotimmo - Tous droits réservés.</p>
-        </div>
-    </footer>
+.contact-item a {
+    color: var(--secondary);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color var(--transition-fast);
+}
 
-    <script>
+.contact-item a:hover {
+    color: var(--accent);
+}
 
-        <script src="assets/js/script.js"></script>
-    
-        // Smooth scroll
-        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-            anchor.addEventListener('click', function (e) {
-                e.preventDefault();
-                const target = document.querySelector(this.getAttribute('href'));
-                if (target) {
-                    target.scrollIntoView({ behavior: 'smooth' });
-                }
-            });
-        });
+/* ---- Bénéfices ---- */
+.benefits {
+    background: var(--light);
+    padding: var(--spacing-md);
+    border-radius: var(--radius-md);
+    margin-top: var(--spacing-lg);
+}
 
-        // Header scroll
-        window.addEventListener('scroll', () => {
-            const header = document.querySelector('.header');
-            if (window.pageYOffset > 100) {
-                header.style.padding = '0.8rem 0';
-            } else {
-                header.style.padding = '1.2rem 0';
-            }
-        });
-    </script>
-</body>
-</html>
+.benefits h3 {
+    color: var(--secondary);
+    margin-bottom: var(--spacing-sm);
+}
+
+.benefits ul {
+    list-style: none;
+}
+
+.benefits li {
+    padding: 0.5rem 0 0.5rem 1.5rem;
+    position: relative;
+}
+
+.benefits li::before {
+    content: "✓";
+    position: absolute;
+    left: 0;
+    color: var(--accent);
+    font-weight: bold;
+}
+
+/* ---- Bloc droit : formulaire ---- */
+.contact-form {
+  background: var(--white);
+  color: var(--text);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-md);
+  animation: fadeInUp 0.8s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centre le formulaire et le texte */
+    text-align: center;  /* centre le texte à l’intérieur */
+}
+
+contact-form ul {
+    list-style: none;
+    padding: 0;
+    margin: 1rem 0;
+    text-align: left; /* si tu veux conserver l’alignement des ✓ */
+}
+
+.contact-form h2 {
+  color: var(--primary);
+}
+
+.contact-form label {
+  color: var(--primary);
+  font-weight: 600;
+}
+
+.contact-form input,
+.contact-form textarea {
+  background: #f9fafb;
+  color: var(--text);
+  border: 1px solid #d1d5db;
+}
+
+.contact-form button {
+  background: var(--secondary);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: var(--radius-md);
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.contact-form button:hover {
+  background: var(--accent);
+}
+
+
+.contact-form iframe,
+.contact-form form {
+    width: 100%;
+    background: transparent;
+}
+
+.contact-form label,
+.contact-form input,
+.contact-form textarea {
+    color: var(--white);
+}
+
+/* ---- Hero ajustement ---- */
+.hero {
+    background: linear-gradient(135deg, var(--primary) 0%, #1e293b 60%, #334155 100%);
+    color: var(--white);
+    text-align: center;
+    min-height: 500px;
+    padding: 200px var(--spacing-lg) 100px;
+}
+
+.hero-content h1 {
+    font-size: var(--font-size-4xl);
+    margin-bottom: var(--spacing-sm);
+}
+
+.hero-content p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* ---- Cartes coordonnées ---- */
+.contact-cards {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+  margin-top: var(--spacing-md);
+}
+
+.contact-card {
+  width: 100%;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.contact-card {
+  background: var(--white);
+  padding: var(--spacing-md);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e5e7eb;
+}
+
+.contact-card:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+  border-color: var(--secondary);
+}
+
+.contact-card .icon {
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  color: var(--white);
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.4rem;
+  margin: 0 auto var(--spacing-sm);
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.contact-card .icon i {
+    font-size: 1.2rem;
+    margin-right: 0.5rem;
+}
+
+.contact-card h3 {
+  color: var(--primary);
+  font-size: 1.1rem;
+  margin-bottom: 0.3rem;
+}
+
+.contact-card p {
+  color: var(--text-muted);
+  line-height: 1.4;
+}
+
+.contact-card a {
+  color: var(--secondary);
+  font-weight: 600;
+  text-decoration: none;
+  transition: color var(--transition-fast);
+}
+
+.contact-card a:hover {
+  color: var(--accent);
+}
+
+.contact-card:hover .icon {
+  box-shadow: 0 0 10px var(--accent);
+}
+
+/* ---- Section Pourquoi nous contacter ---- */
+.why-contact {
+  text-align: center;
+  padding: var(--spacing-xl) var(--spacing-lg);
+  background: var(--light);
+  border-radius: var(--radius-lg);
+  margin: var(--spacing-xl) 0;
+}
+
+.why-contact {
+    text-align: center;
+    background: #f8f9fa;
+    padding: 3rem 1rem;
+    border-radius: 1rem;
+}
+
+.why-contact h2 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-lg);
+}
+
+.why-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: var(--spacing-lg);
+  justify-items: center;
+}
+
+.why-item {
+  background: var(--white);
+  padding: var(--spacing-lg);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  transition: all 0.3s ease;
+  max-width: 320px;
+}
+
+.why-item:hover {
+  transform: translateY(-5px);
+  box-shadow: var(--shadow-md);
+}
+
+.why-item i {
+  font-size: 2rem;
+  color: var(--secondary);
+  margin-bottom: var(--spacing-sm);
+}
+
+.why-item h3 {
+  color: var(--primary);
+  margin-bottom: var(--spacing-xs);
+}
+
+.why-item p {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+
+/* ---- Animation subtile ---- */
+@keyframes fadeInUp {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+
+/* Responsive */
+@media (max-width: 991px) {
+    .contact-grid {
+        flex-direction: column;
+    }
+    .contact-info,
+    .contact-form {
+        flex: 1 1 100%;
+    }
+}
+
+@media (max-width: 575px) {
+    .contact-hero h1 {
+        font-size: 2rem;
+    }
+    .contact-hero p {
+        font-size: 1rem;
+    }
+}
