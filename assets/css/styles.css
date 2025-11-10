@@ -1,3 +1,4 @@
+
 /* ===================================
    PILOTIMMO - STYLESHEET
    Version: 2.0
@@ -99,7 +100,7 @@ p {
 .container {
     max-width: 1400px;
     margin: 0 auto;
-    padding: 0 var(--spacing-lg);
+    padding: 0 20px;
 }
 
 .section {
@@ -129,10 +130,38 @@ p {
     gap: var(--spacing-md);
 }
 
+/* 2 et 3 colonnes classiques */
 .grid-2 { grid-template-columns: repeat(2, 1fr); }
 .grid-3 { grid-template-columns: repeat(3, 1fr); }
-.grid-4 { grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
 
+/* Grille 4 cartes */
+.grid.grid-4 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+  align-items: stretch;
+}
+}
+
+/* Mobile : une seule colonne */
+/* Responsive */
+@media (max-width: 991px) {
+  .grid.grid-4 {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 575px) {
+  .grid.grid-4 {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+    .grid-4 {
+        grid-template-columns: 1fr;
+    }
+}
 /* ==========================================================================
    4. HEADER & NAVIGATION
    ========================================================================== */
@@ -362,6 +391,10 @@ header .logo img {
     margin-right: auto;
 }
 
+.hero-white-text {
+    color: white;
+}
+
 .highlight {
     background: linear-gradient(135deg, var(--secondary), var(--accent));
     -webkit-background-clip: text;
@@ -377,10 +410,6 @@ header .logo img {
     max-width: 800px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.hero-white-text {
-    color: white !important;
 }
 
 /* Persona Cards in Hero */
@@ -1035,14 +1064,7 @@ footer img {
     .floating-cards {
         display: none;
     }
-    
-    .grid-3 {
-        grid-template-columns: 1fr;
-    }
-    
-    .grid-4 {
-        grid-template-columns: repeat(2, 1fr);
-    }
+
     
     .process-line {
         display: none;
